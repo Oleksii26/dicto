@@ -1,0 +1,84 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    background-color: whitesmoke;
+}
+
+input,
+button {
+    padding: 8px;
+    margin: 20px 5px;
+}
+
+.alphabet {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.letter-section {
+    background-color: rgb(235, 222, 198);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 5px 5px 5px 1px rgba(128, 128, 128, 0.427);
+    cursor: pointer;
+    transition: 300ms linear;
+}
+
+.trans {
+    /* color: #838383;
+    background-color: #838383; */
+    transition: 300ms linear;
+}
+
+.unshow {
+    color: #838383;
+        background-color: #838383;
+}
+.letter-section:hover {
+    background-color: rgb(231, 224, 212);
+}
+.letter-section:hover .trans{
+    background-color: transparent;
+}
+
+.letter-section h3 {
+    margin-top: 0;
+}
+
+.word {
+    margin: 2px 0;
+}
+
+h3 {
+    color: black;
+}
+
+.btn {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: gray;
+    transition: 300ms linear;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn svg {
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+
+.btn:hover {   
+    background-color: rgb(190, 187, 187);
+}
+
+.header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
